@@ -1,0 +1,5 @@
+usr/bin/avahi-discover
+usr/share/applications/avahi-discover.desktop
+usr/share/avahi/interfaces/avahi-discover.ui
+usr/share/man/man1/avahi-discover.1
+usr/lib/python*/dist-packages/avahi_discover
