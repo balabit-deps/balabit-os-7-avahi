@@ -73,7 +73,8 @@ dns_has_local() {
     fi
   fi
 
-  OUT=`LC_ALL=C host -t soa local. 2>&1`
+  # Use timeout when calling host as workaround for LP: #1752411
+  OUT=`LC_ALL=C timeout 5 host -t soa local. 2>&1`
   if [ $? -eq 0 ] ; then
     if echo "$OUT" | egrep -vq 'has no|not found'; then
       return 0
