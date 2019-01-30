@@ -1,3 +1,13 @@
+avahi (0.7-3.1ubuntu1.2) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2017-6519-and-CVE-2018-1000845.patch:
+      fix in avahi-core/server.c.
+    - CVE-2017-6519
+    - CVE-2018-1000845
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 30 Jan 2019 12:32:00 -0300
+
 avahi (0.7-3.1ubuntu1.1) bionic; urgency=medium
 
   [ Trent Lloyd ]
