@@ -1,3 +1,12 @@
+avahi (0.7-3.1ubuntu1.3) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: DoS via infinite loop on local socket
+    - debian/patches/CVE-2021-3468.patch: handle HUP event in
+      avahi-daemon/simple-protocol.c.
+    - CVE-2021-3468
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 06 Jul 2021 11:39:41 -0400
+
 avahi (0.7-3.1ubuntu1.2) bionic-security; urgency=medium
 
   * SECURITY UPDATE: Denial of service
